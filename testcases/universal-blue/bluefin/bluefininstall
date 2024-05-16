@@ -1,0 +1,19 @@
+function test_setup() {
+    
+    test_user="bigpod"
+    test_password="This1sAt3st_passw0rd!"
+}
+
+function test_post_boot_grub() {
+    qt_wait_for_seconds 5
+    qt_wait_for_text "$FUNCNAME" "$text_console_gnu_grub" 10 5
+    qt_screenshot_ppm "$FUNCNAME"
+    qt_send_key "return"
+}
+
+function test_installer_initial_load() {
+    qt_wait_for_text "$FUNCNAME" "$text_installation_welcome_to_ubuntu_title" 10 30
+    qt_wait_for_text "$FUNCNAME" "$text_installation_welcome_to_ubuntu_body" 10 3
+    qt_send_key_combo "alt-f4"
+    qt_wait_for_seconds 1
+}

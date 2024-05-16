@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+QT_TESTCASES_DIR="/quicktest-ublue-poc/testcases/" QT_KEYMAPS_DIR="/quicktest/testcases/keymaps/" QT_NOTIFY=false QUICKEMU_VM_DIR="/vms" /quicktest/quicktest
