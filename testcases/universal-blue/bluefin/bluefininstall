@@ -1,3 +1,13 @@
+########################################################################################
+#                                                                                      #
+#        Name: bluefininstall                                                          #
+#      Author: Primož Ajdišek bigpod                                                   #
+#        Date: 2024-05-16                                                              #
+#     Version: 1                                                                       #
+# Description: install bluefin                                                         #
+#                                                                                      #
+########################################################################################
+
 function test_setup() {
     
     test_user="bigpod"
